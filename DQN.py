@@ -142,7 +142,7 @@ for episode in range(num_episodes):
     if episode % target_update_frequency == 0:
         target_network.load_state_dict(q_network.state_dict())
 
-    # below are used for recording the episode stats
+    # below are used for printing the episode stats
     ############################################################################
     episode_rewards.append(episode_reward)
     avg_q_values.append(np.mean(episode_q_values) if episode_q_values else 0)
