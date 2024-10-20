@@ -17,7 +17,7 @@ This table provides a detailed description of the key features used in the lande
 
 ## Lander Actions
 
-This table outlines the possible actions the lander can take during its descent and landing.
+This table outlines the possible actions the lander can take during its descent and landing. 
 
 | Index | Action                            | Description                             |
 | ----- | --------------------------------- | --------------------------------------- |
