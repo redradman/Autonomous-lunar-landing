@@ -1,20 +1,17 @@
 # Auto-Pilot / LunarLander-v3
+**Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages Deep Q-Network (DQN) algorithm to train an autonomous agent to land a ship safely without collision. Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/) environment from Gymnasium, this project demonstrates the application of Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO) in training agents to perform complex landing maneuvers with high efficiency and stability.
 
 ## Table of Contents
 - [Auto-Pilot / LunarLander-v3](#auto-pilot--lunarlander-v3)
   - [Table of Contents](#table-of-contents)
-  - [Project Overview](#project-overview)
-  - [Features](#features)
   - [Results](#results)
+  - [Features](#features)
   - [Environment](#environment)
     - [Lander State Features](#lander-state-features)
     - [Lander Actions](#lander-actions)
   - [Installation](#installation)
 
-## Project Overview
-
-**Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages Deep Q-Network (DQN) algorithm to train an autonomous agent to land a ship safely without collision. Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/) environment from Gymnasium, this project demonstrates the application of Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO) in training agents to perform complex landing maneuvers with high efficiency and stability.
-
+## Results
 
 ## Features
 - **Deep Q-Network (DQN) Implementation**: Customizable DQN with replay buffer and target network for stable learning. DQN has been implemented from scratch from the [original paper](https://arxiv.org/abs/1312.5602) (look at algorithm 1 in the paper for the pseudocode).
@@ -22,9 +19,6 @@
 - **Advanced Replay Buffer Management**: Enhanced buffer training frequency to optimize learning rates.
 - **Comprehensive Documentation**: Detailed README with environment setup, feature descriptions, and usage guidelines.
 - **Performance Logging and Visualization**: Track training progress and visualize results for better insights.
-
-## Results
-
 
 
 ## Environment
