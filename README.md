@@ -1,4 +1,4 @@
-# Apollos-Touch / LunarLander-v3
+# Auto-Pilot / LunarLander-v3
 
 ## Lander State Features
 
