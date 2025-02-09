@@ -1,5 +1,7 @@
 # Auto-Pilot / LunarLander-v3
-**Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages Deep Q-Network (DQN) algorithm to train an autonomous agent to land a ship safely without collision. Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/) environment from Gymnasium, this project demonstrates the application of Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO) in training agents to perform complex landing maneuvers with high efficiency and stability.
+**Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages Deep Q-Network (DQN) algorithm to **train an autonomous agent to land a ship safely without collision**. 
+
+Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/) environment from Gymnasium, the agent must learn to land the ship in the designated spot without crashing into the two yellow flags. **The agent learns how to do this using the rewards (numeric feedback) it receives for its actions.**
 
 ## Table of Contents
 - [Auto-Pilot / LunarLander-v3](#auto-pilot--lunarlander-v3)
@@ -15,7 +17,6 @@
 
 ## Features
 - **Deep Q-Network (DQN) Implementation**: Customizable DQN with replay buffer and target network for stable learning. DQN has been implemented from scratch from the [original paper](https://arxiv.org/abs/1312.5602) (look at algorithm 1 in the paper for the pseudocode).
-- **Proximal Policy Optimization (PPO)**: Integration with Stable Baselines 3 for policy-based reinforcement learning. PPO's original paper can be found [here](https://arxiv.org/abs/1707.06347).
 - **Advanced Replay Buffer Management**: Enhanced buffer training frequency to optimize learning rates.
 - **Comprehensive Documentation**: Detailed README with environment setup, feature descriptions, and usage guidelines.
 - **Performance Logging and Visualization**: Track training progress and visualize results for better insights.
@@ -26,7 +27,6 @@ The environment is a [LunarLander-v3](https://gymnasium.farama.org/environments/
 
 
 ### Lander State Features
-
 This table provides a detailed description of the key features used in the lander environment, which are critical for controlling and observing the state of the lander during its descent and landing.
 
 | Index | Feature                                                           | Description                                         |
@@ -41,8 +41,7 @@ This table provides a detailed description of the key features used in the lande
 | 7     | **If the right leg contact point has touched the land (boolean)** | Whether the right leg has made contact (True/False) |
 
 ### Lander Actions
-
-This table outlines the possible actions the lander can take during its descent and landing. 
+This table outlines the possible actions the agent (who is learning) can take during the descent and landing of the ship. 
 
 | Index | Action                            | Description                             |
 | ----- | --------------------------------- | --------------------------------------- |
