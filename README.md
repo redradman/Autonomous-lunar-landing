@@ -1,5 +1,5 @@
 # Auto-Pilot / LunarLander-v3
-**Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages Deep Q-Network (DQN) algorithm to **train an autonomous agent to land a ship safely without collision**. 
+**Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages [Deep Q-Network (DQN) algorithm](https://arxiv.org/abs/1312.5602) to **train an autonomous agent to land a ship safely without collision**. 
 
 Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/) environment from Gymnasium, the agent must learn to land the ship in the designated spot without crashing into the two yellow flags. **The agent learns how to do this using the rewards (numeric feedback) it receives for its actions.**
 
