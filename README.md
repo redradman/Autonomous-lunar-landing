@@ -1,5 +1,5 @@
 # Auto-Pilot / LunarLander-v3
-Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages [[Deep Q-Network (DQN) algorithm](https://arxiv.org/abs/1312.5602)](https://arxiv.org/abs/1312.5602) to **train an autonomous agent to land a ship safely without collision**. 
+Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages [Deep Q-Network (DQN) algorithm](https://arxiv.org/abs/1312.5602) to **train an autonomous agent to land a ship safely without collision**. 
 
 Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/) environment from Gymnasium, the agent must learn to land the ship in the designated spot without crashing into the two yellow flags. **The agent learns how to do this using the rewards (numeric feedback) it receives for its actions.**
 
@@ -16,9 +16,9 @@ Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/l
 ## Results
 Let's skip to results: 
 | Before Training | After Training |
-|:--------------:|:-------------:|
-| | |
-| Episode 0: The ship simply collapses since the agent has not interacted with the environment and not learned anything yet | **After 500 epsiodes** (iteration of training), the agent has learned to slowly land the ship between the yellow flags|
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/33378ccf-7007-491e-b975-2b27104c1f4b" width="400"> | <img src="https://github.com/user-attachments/assets/197f85b4-28b6-4515-8333-4e9521a7109f" width="400"> |
+| **Episode 0** <br> The ship simply collapses since the agent has not interacted with the environment and not learned anything yet | **Epsiode 500** <br> The agent has learned to slowly land the ship between the yellow flags|
 
 ## Features
 - **Deep Q-Network (DQN) Implementation**: Customizable DQN target network for stable learning. **In this project,DQN algorithm has been implemented from scratch without any dependencies** from the [original paper](https://arxiv.org/abs/1312.5602) (look at algorithm 1 in the paper for the pseudocode).
