@@ -17,7 +17,7 @@ Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/l
 Let's skip to results: 
 | Before Training | After Training |
 |:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/33378ccf-7007-491e-b975-2b27104c1f4b" width="400"> | <img src="https://github.com/user-attachments/assets/197f85b4-28b6-4515-8333-4e9521a7109f" width="400"> |
+| <img src="https://github.com/user-attachments/assets/33378ccf-7007-491e-b975-2b27104c1f4b" width="300"> | <img src="https://github.com/user-attachments/assets/197f85b4-28b6-4515-8333-4e9521a7109f" width="300"> |
 | **Episode 0** <br> The ship simply collapses since the agent has not interacted with the environment and not learned anything yet | **Epsiode 500** <br> The agent has learned to slowly land the ship between the yellow flags|
 
 ## Features
@@ -56,4 +56,16 @@ This table outlines the possible actions the agent (who is learning) can take du
 
 
 ## Installation
+To run the DQN.py file, create a virtual environment and install the dependencies. Here is the command:
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install "gymnasium[all]" torch numpy
+```
 
+If you would like to run the PPO model instead of the DQN model, you should also install the stable-baselines3 library:
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install "gymnasium[all]" torch numpy stable-baselines3
+```
