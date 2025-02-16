@@ -14,7 +14,6 @@ Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/l
   - [Installation](#installation)
 
 ## Results
-Let's skip to results: 
 | Before Training | After Training |
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/33378ccf-7007-491e-b975-2b27104c1f4b" width="380"> | <img src="https://github.com/user-attachments/assets/197f85b4-28b6-4515-8333-4e9521a7109f" width="380"> |
