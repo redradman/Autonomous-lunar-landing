@@ -18,6 +18,7 @@ Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/l
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/33378ccf-7007-491e-b975-2b27104c1f4b" width="380"> | <img src="https://github.com/user-attachments/assets/197f85b4-28b6-4515-8333-4e9521a7109f" width="380"> |
 | **Episode 0** <br> The ship simply collapses since the agent has not interacted with the environment and not learned anything yet | **Epsiode 500** <br> The agent has learned to slowly land the ship between the yellow flags|
+_Note: Episode refers to training iteration in the context of this project and Reinforcement Learning. _
 
 ## Features
 - **Deep Q-Network (DQN) Implementation**: Customizable DQN target network for stable learning. **In this project,DQN algorithm has been implemented from scratch without any dependencies** from the [original paper](https://arxiv.org/abs/1312.5602) (look at algorithm 1 in the paper for the pseudocode).
