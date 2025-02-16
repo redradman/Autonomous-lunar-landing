@@ -1,5 +1,5 @@
 # Auto-Pilot / LunarLander-v3
-**Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages [Deep Q-Network (DQN) algorithm](https://arxiv.org/abs/1312.5602) to **train an autonomous agent to land a ship safely without collision**. 
+Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages [[Deep Q-Network (DQN) algorithm](https://arxiv.org/abs/1312.5602)](https://arxiv.org/abs/1312.5602) to **train an autonomous agent to land a ship safely without collision**. 
 
 Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/) environment from Gymnasium, the agent must learn to land the ship in the designated spot without crashing into the two yellow flags. **The agent learns how to do this using the rewards (numeric feedback) it receives for its actions.**
 
@@ -9,25 +9,28 @@ Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/l
   - [Results](#results)
   - [Features](#features)
   - [Environment](#environment)
-    - [Lander State Features](#lander-state-features)
-    - [Lander Actions](#lander-actions)
+    - [What the learning agent can see](#what-the-learning-agent-can-see)
+    - [What the agent can do](#what-the-agent-can-do)
   - [Installation](#installation)
 
 ## Results
+Let's skip to results: 
+| Before Training | After Training |
+|:--------------:|:-------------:|
+| | |
+| Episode 0: The ship simply collapses since the agent has not interacted with the environment and not learned anything yet | **After 500 epsiodes** (iteration of training), the agent has learned to slowly land the ship between the yellow flags|
 
 ## Features
-- **Deep Q-Network (DQN) Implementation**: Customizable DQN with replay buffer and target network for stable learning. DQN has been implemented from scratch from the [original paper](https://arxiv.org/abs/1312.5602) (look at algorithm 1 in the paper for the pseudocode).
-- **Advanced Replay Buffer Management**: Enhanced buffer training frequency to optimize learning rates.
+- **Deep Q-Network (DQN) Implementation**: Customizable DQN target network for stable learning. **In this project,DQN algorithm has been implemented from scratch without any dependencies** from the [original paper](https://arxiv.org/abs/1312.5602) (look at algorithm 1 in the paper for the pseudocode).
+- **Advanced Replay Buffer Management**: Enhanced buffer training frequency to optimize learning rates. Replay buffer is used to store the experiences of the agent during training.
 - **Comprehensive Documentation**: Detailed README with environment setup, feature descriptions, and usage guidelines.
 - **Performance Logging and Visualization**: Track training progress and visualize results for better insights.
-
 
 ## Environment
 The environment is a [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/) from Gymnasium.
 
-
-### Lander State Features
-This table provides a detailed description of the key features used in the lander environment, which are critical for controlling and observing the state of the lander during its descent and landing.
+### What the learning agent can see
+This table provides a detailed description of the key features used in the lander environment, which are critical for controlling and observing the state of the lander during its descent and landing. 
 
 | Index | Feature                                                           | Description                                         |
 | ----- | ----------------------------------------------------------------- | --------------------------------------------------- |
@@ -40,7 +43,7 @@ This table provides a detailed description of the key features used in the lande
 | 6     | **If the left leg contact point has touched the land (boolean)**  | Whether the left leg has made contact (True/False)  |
 | 7     | **If the right leg contact point has touched the land (boolean)** | Whether the right leg has made contact (True/False) |
 
-### Lander Actions
+### What the agent can do
 This table outlines the possible actions the agent (who is learning) can take during the descent and landing of the ship. 
 
 | Index | Action                            | Description                             |
