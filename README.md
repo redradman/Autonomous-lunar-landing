@@ -4,13 +4,14 @@ Auto-Pilot / LunarLander-v3** is a reinforcement learning project that leverages
 Utilizing the [LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/) environment from Gymnasium, the agent must learn to land the ship in the designated spot without crashing into the two yellow flags. **The agent learns how to do this using the rewards (numeric feedback) it receives for its actions.**
 
 ## Table of Contents
-- [Auto-Pilot / LunarLander-v3](#auto-pilot--lunarlander-v3)
+- [Autonomous-lunar-landing](#autonomous-lunar-landing)
   - [Table of Contents](#table-of-contents)
   - [Results](#results)
   - [Features](#features)
   - [Environment](#environment)
     - [What the learning agent can see](#what-the-learning-agent-can-see)
     - [What the agent can do](#what-the-agent-can-do)
+  - [Experimentation](#experimentation)
   - [Installation](#installation)
 
 ## Results
@@ -54,7 +55,10 @@ This table outlines the possible actions the agent (who is learning) can take du
 | 2     | **Fire the main engine**          | Fires the main engine to propel upwards |
 | 3     | **Fire right orientation engine** | Rotates the lander to the left          |
 
+## Experimentation
+The `recordings` directory contains the videos of the agent's performance in the training process. The recordings happen every 100 episodes.
 
+To observe the effects of the buffer reply, the usage of the buffer reply was modified with another training iteration heavily dependent on the buffer. This hindered the learning process and the agent was unable to learn anything stable. If you are interested in observing this check out the `recordings` directory and compare the "regular" training with the "buffer" training.
 
 ## Installation
 To run the DQN.py file, create a virtual environment and install the dependencies. Here is the command:
