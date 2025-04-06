@@ -1,6 +1,9 @@
 # Autonomous-lunar-landing 🚀
 Autonomous-lunar-landing is a reinforcement learning project that leverages [Deep Q-Network (DQN) algorithm](https://arxiv.org/abs/1312.5602) to **train an autonomous agent to land a ship safely without collision**. The agent must learn to land the ship in the designated spot without crashing into the two yellow flags. **The agent learns how to do this using the rewards (numeric feedback) it receives for its actions.**
 
+This is a project is a reimplementation of the original DQN algorithm from scratch based on [paper](https://arxiv.org/abs/1312.5602).
+
+
 ## Table of Contents
 - [Autonomous-lunar-landing](#autonomous-lunar-landing)
   - [Table of Contents](#table-of-contents)
